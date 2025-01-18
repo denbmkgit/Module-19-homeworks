@@ -77,4 +77,12 @@ Traceback (most recent call last):
            ^^^^^^^^^^^
 TypeError: 'Buyer' object is not iterable
 
+g2=Game.objects.get(id=2)
+g2.size
+>>> g2.size=1.5
+>>> g2.save
+<bound method Model.save of <Game: Mario>>
+>>> g2.save()
+
+
 '''
